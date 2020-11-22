@@ -1,0 +1,179 @@
+body .container {
+    margin: 0px;
+    background-attachment: fixed;
+    background-size: cover;
+}
+@import url(https://fonts.googleapis.com/css?family=Gabriela|Dosis:200);
+
+body {
+  font-family: "Vidaloka", serif;
+  font-smoothing: antialiased;
+  font-weight: normal;
+  
+  
+  margin: 0;
+}
+.background {
+  background-attachment: fixed;
+  background-size: cover;
+  
+}
+h1 {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+p {
+  line-height: 1.6em;
+  text-align: center;
+  font-size: 14px;
+}
+
+p + p {
+  margin-top: 1.0em;
+}
+
+a {
+  transition: color 0.2s ease-out;
+  text-decoration: none;
+  color: #FBB;
+}
+
+a:hover {
+  color: #444;
+}
+
+.overlay {
+  pointer-events: none;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.container {
+  background-attachment: fixed;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+
+.controls {
+  
+  
+  position: absolute;
+  right: 20px;
+  bottom: 3%;
+  
+}
+
+.fa-facebook {
+    background:rgba(128, 128, 128, 0);
+    color: white;
+    
+}
+.fa-facebook :hover {
+    background-color: white;
+}
+.fa-youtube {
+    background: rgba(128, 128, 128, 0);
+    color:white;
+}
+.fa-instagram {
+    background: rgba(128, 128, 128, 0);
+    color: white;
+}
+.fa {
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 30%;
+    padding: 17px;
+}
+.social {
+    position: absolute;
+    top: 1%;
+    left: 80%;
+    width: 200px;
+    z-index: 100;
+}
+.social a {
+    margin: 6px 6px;
+}
+.intro {
+    width: 40%;
+    padding: 2em;
+    position: absolute;
+    color: white;
+    top: 20%;
+    left: 29%;
+    font-size: 40px;
+    font-family: sans1;
+    box-shadow: 4px 7px 15px black;
+    border-radius: 5%;
+    background-color: rgba(1, 58, 107, 0);
+    background-image: -webkit-linear-gradient(45deg, rgba(2, 2, 2, 0) 50%, rgba(0, 0, 0, 0.596) 50%);
+}
+.intro .letters1 {
+    color: white;
+    font-size: 63px;
+    margin: 0px;
+    text-align: left;
+    
+}
+.intro .letters2 {
+    text-align: left;
+    font-size: 30px;
+    margin: 0px;
+    
+
+}
+.intro .letters3 {
+    margin: 0px;
+    font-size: 35px;
+    text-align: left;
+} 
+.greyletters {
+    display: flex;
+    color: grey;
+    font-size: 20px;
+    margin-top: 30px;
+}
+.greyletters p {
+   display: contents;
+   padding-left: 10px;
+}
+.topnav {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    left: 35%;
+}
+.topnav a {
+    color: white;
+    font-family: sans1;
+    font-size: 17px;
+    padding: 10px;
+    margin: 20px;
+   
+}
+.introtext {
+  position: relative;
+  left: 20%;
+  font-family: sans1;
+  margin: 1em;
+  
+  
+}
+.introtext p {
+  font-family: vidaloca;
+  text-align: left;
+}
+
