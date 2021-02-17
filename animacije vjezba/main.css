@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #111111;
+}
+.circle {
+  position: relative;
+  width: 700px;
+  height: 700px;
+}
+.circle-blur,
+.circle-border {
+  position: absolute;
+  background: linear-gradient(90deg, rgba(251, 93, 173, 1) 0%, rgba(85, 251, 159, 1) 50%, rgba(185, 122, 255, 1) 100%);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.circle-blur {
+  position: absolute;
+  width: 700px;
+  height: 700px;
+  filter: blur(20px);
+  opacity: 0.3;
+}
+.circle-border {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.circle-middle-background {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 50%;
+  width: 530px;
+  height: 530px;
+  background-color: #050210;
+  z-index: 0;
+}
+.circle-middle {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 50%;
+  animation: radar 3s infinite;
+  transition: all ease-in-out;
+  width: 50px;
+  height: 50px;
+  background-color:#05021098;
+  z-index: 99;
+}
+@keyframes radar222 {
+  1% {
+    width: 150px;
+    height: 150px;
+    background: #2b2372; }
+ 
+ 100% {
+    width: 530px;
+    height: 530px;
+    background: #35295f;
+    opacity: 0.5;
+  }
+}
+.circle-middle-background {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 50%;
+  width: 530px;
+  height: 530px;
+  background-color: #050210;
+  z-index: 0;
+}
+.circle-middleeee {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 50%;
+  animation: radar222 3s infinite;
+  transition: all ease-in-out;
+  width: 50px;
+  height: 50px;
+  z-index: 99;
+  animation-delay: 4;
+}
+@keyframes radar {
+  1% {
+    width: 150px;
+    height: 150px;
+    background: #160c38; }
+
+ 100% {
+    width: 530px;
+    height: 530px;
+    background: #130a33;
+    opacity: 2%;
+  }
+}
+
+  
