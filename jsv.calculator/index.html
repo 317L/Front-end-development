@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, inital-scale=1"    >    
+        <meta http-equiv="X-UA-Compatible" content="ie-edge">
+        <title>Document</title>
+    </head>
+<body>
+    <style>
+        .wrap { 
+        margin-top: 300px;
+        background-color: antiquewhite;
+        width: 400px;
+        height: 500px;
+        background-color: #2980B9;
+        box-shadow: 1px 1px 20px 7px white;
+        border-radius: 20px;
+
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #00B4DB;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            padding: 0;
+            margin: 0; 
+            background-color: #111111;
+
+        }
+        #input {
+            height: 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin: 30px ;
+            width: 300px; 
+        }
+        button {
+            margin: 1px;
+            background-color: white;
+            border-style: none;
+            width: 90px;
+            height: 90px;
+        }
+        #opt button {
+            width: 122px;
+        }
+        
+        
+            
+        
+    </style>
+  
+   
+   <center>
+       <input type="text" id="input"><br>
+       <button onclick="getInput(1)">1</button>
+       <button onclick="getInput(2)">2</button>
+       <button onclick="getInput(3)">3</button>
+       <button onclick="getInput('+')">+</button><br>
+
+       <button onclick="getInput(4)">4</button>
+       <button onclick="getInput(5)">5</button>
+       <button onclick="getInput(6)">6</button>
+       <button onclick="getInput('-')">-</button><br>
+
+       <button onclick="getInput(7)">7</button>
+       <button onclick="getInput(8)">8</button>
+       <button onclick="getInput(9)">9</button>
+       <button onclick="getInput('*')">*</button><br>
+     
+       <button onclick="getInput('c')">c</button>
+       <button onclick="getInput('/')">/</button>
+       <button onclick="getInput('=')">=</button>
+ 
+
+   </center>
+   <script>
+       var ok=0;
+    function getInput(i){   
+        var x=i;
+        if(x==='='){
+             document.getElementById('input').value=eval(document.getElementById
+             ('input').value)
+         }else if(x==='+' || x==='*' || x==='/' || x==='-') {
+             if(ok===0){  
+               document.getElementById('input').value+=i; 
+             }
+ 
+         }else if (x==='c'){
+             document.getElementById('input').value='';
+         }else  { 
+             document.getElementById('input').value+=i;
+             ok=0;
+         }
+    }
+    
+</script>
+
+
+
+   
+</body>
+
+
+</html>
