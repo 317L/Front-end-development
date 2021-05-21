@@ -1,0 +1,2 @@
+User name is : new_user
+pass is 123456789
