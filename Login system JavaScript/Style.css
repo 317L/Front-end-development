@@ -1,0 +1,62 @@
+body {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+#container {
+  width: 460px;
+  margin: 0 auto;
+  position: relative;
+}
+#conatainer .fas {
+  position: absolute;
+  top: 50%;
+  right: 8%;
+}
+
+form label,
+form input {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+form input {
+  padding: 8px;
+}
+input {
+  outline: 0;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form div {
+  margin: 16px 0px;
+}
+
+.icon {
+  position: absolute;
+  width: auto;
+  bottom: 10px;
+  right: 10px;
+  margin-top: 0;
+}
+
+.success {
+  background: url("/manipulacija_DOM_elementima/img/check-circle-regular.svg");
+  background-repeat: no-repeat;
+  padding-right: calc(1.5em + 0.75rem);
+  background-position: right calc(0.375em + 0.1875rem) center;
+  background-size: 1.5rem;
+  right: 0;
+}
+
+.fail {
+  background: url("/manipulacija_DOM_elementima/img/times-circle-regular.svg");
+  background-repeat: no-repeat;
+  padding-right: calc(1.5em + 0.75rem);
+  background-position: right calc(0.375em + 0.1875rem) center;
+  background-size: 1.5rem;
+  right: 0;
+}

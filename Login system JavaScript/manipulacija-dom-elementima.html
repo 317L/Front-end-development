@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <script src="https://kit.fontawesome.com/c21fd324a6.js" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="style.css" />
+      <title>Assignment 2 - Website Building</title>
+    </head>
+
+    <body>
+      <div id="container">
+        <form>
+          <div>
+            <label for="username">Username:</label>
+            <input id="username" type="text" />
+          </div>
+
+          <div>
+            <label for="password">Password:</label>
+            <input id="password" type="password" />
+          </div>
+
+          <input type="submit" value="Login" id="login-btn" />
+          <div id="message-txt"></div>
+        </form>
+      </div>
+
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous"
+      ></script>
+
+      <script>
+        const user = document.getElementById("username");
+        const pass = document.getElementById("password");
+        const login = document.getElementById("login-btn");
+        let messageTxt = document.getElementById("message-txt");
+
+        function displayMessage(e) {
+          const user_correct = "new_user";
+          const pass_correct = "123456789";
+          $(messageTxt).empty();
+
+          if (user.value !== user_correct && user.value.length > 0) {
+            user.style.borderColor = "red";
+            user.classList.add("fail");
+            pass.classList.remove("success");
+            messageTxt.append("  please enter correct username;  ");
+
+            e.preventDefault();
+          }
+
+          if (user.value == "") {
+            user.style.borderColor = "red";
+            user.classList.add("fail");
+
+            pass.classList.remove("success");
+            messageTxt.append("  please enter username;  ");
+          }
+
+          if (user.value === user_correct) {
+            user.style.borderColor = "green";
+            user.classList.remove("fail");
+            user.classList.add("success");
+
+            e.preventDefault();
+          }
+          if (pass.value !== pass_correct && pass.value.length > 0) {
+            pass.style.borderColor = "red";
+            pass.classList.add("fail");
+            pass.classList.remove("success");
+
+            messageTxt.append("  please enter valid password;  ");
+
+            e.preventDefault();
+          }
+
+          if (pass.value == "") {
+            pass.style.borderColor = "red";
+            pass.classList.add("fail");
+            pass.classList.remove("success");
+            messageTxt.append("  please enter password;  ");
+            e.preventDefault();
+          }
+
+          if (pass.value === pass_correct) {
+            pass.style.borderColor = "green";
+            pass.classList.remove("fail");
+            pass.classList.add("success");
+
+            e.preventDefault();
+          }
+          if (user.value === user_correct && pass.value === pass_correct) messageTxt.append("Successful login!");
+        }
+
+        login.onclick = displayMessage;
+      </script>
+    </body>
+  </html>
+</html>
