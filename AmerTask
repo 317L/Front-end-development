@@ -52,68 +52,79 @@
               Received Your Request. Let Us Start Working Together ASAP!</strong
             >
           </div>
-
-          <tbody>
-            <tr style="height: 512.375px">
-              <td
-                style="height: 512.375px; width: 626.042px; border-radius: 20px; box-shadow: 0px 0px 9px 2px #888888"
-                align="center"
-                bgcolor="white"
-              >
-                <table
-                  id="emailFieldsTable"
-                  class="mceNonEditable"
-                  style="height: 500px"
-                  border="0"
-                  width="624"
-                  cellspacing="0"
-                  cellpadding="5"
-                >
-                  <tbody id="emailFieldsTableBody">
-                    <tr id="row_2" class="questionRow" style="height: 4px">
-                      <td
-                        id="question_2"
-                        class="questionColumn"
-                        style="width: 610.039px; height: 4px; padding: 5px !important"
-                        valign="top"
-                        bgcolor=""
-                      >
-                        <p>
-                          <!--{contact_info[1]}-->
-                          We appreciate you contacting us and are ready to help with your request below:
-                        </p>
-                      </td>
-                    </tr>
-                    <tr id="row_9" class="questionRow" style="height: 45.8073px">
-                      <td
-                        id="question_9"
-                        class="questionColumn"
-                        style="width: 610.039px; height: 45.8073px; padding: 5px !important"
-                        valign="top"
-                        bgcolor=""
-                      >
-                        <p>&nbsp;</p>
-                        <!--<p>"{howCan20}"</p>-->
-                        <p>&nbsp;</p>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+          <p>
+            {contact_info[1]}
+            We appreciate you contacting us and are ready to help with your request below:
+          </p>
+          <style>
+            .mceNonEditable .tr2 .td2 {
+            border: 1px solid black;
+            border-collapse: collapse;
+            border-radius: 7px;}
+             .tr2 .td2 {
+            padding: 6px;
+            text-align: left;}</style>
+          <hr>
+          <h4>Please select solutions and services you would like to learn more about.</h4>
+          <hr>
+          <table id="emailFieldsTable"
+                 class="mceNonEditable">
+            <thead>
+              <tr class="tr2">
+                <th>Start Up Solutions</th>
+                <th>Established Business Solutions</th>
+                <th>Enterprise Solutions</th>
+              </tr>
+            </thead>
+            <tbody id="emailFieldsTableBody">
+              <tr class="tr2">
+                <td class="td2"><input type="checkbox" name="name1" /> &nbsp; Business Model Design</td>
+                <td class="td2"><input type="checkbox" name="name1" /> &nbsp; Business Management</td>
+                <td class="td2"><input type="checkbox" name="name1" /> &nbsp; Business Intelligence & Data Reporting</td>
+              </tr>
+              <tr class="tr2">
+                <td class="td2"><input type="checkbox" name="name1" /> &nbsp; Email & Phone Support</td>
+                <td class="td2"><input type="checkbox" name="name1" /> &nbsp; Project Management</td>
+                <td class="td2"><input type="checkbox" name="name1" /> &nbsp; Business Strategy</td>
+              </tr>
+              <tr class="tr2">
+                <td class="td2"><input type="checkbox" name="name1" /> &nbsp; Incorporations & Fillings</td>
+                <td class="td2"><input type="checkbox" name="name1" /> &nbsp; Remote Work Solutions</td>
+                <td class="td2"><input type="checkbox" name="name1" /> &nbsp; Database Administration</td>
+              </tr>
+              <tr class="tr2">
+                <td class="td2"><input type="checkbox" name="name1" /> &nbsp; App Integrations & Workflow</td>
+                <td class="td2"><input type="checkbox" name="name1" /> &nbsp; Staffing & Outsourcing</td>
+                <td class="td2"><input type="checkbox" name="name1" /> &nbsp; Position Elimination</td>
+              </tr>
+              <tr class="tr2">
+                <td class="td2"><input type="checkbox" name="name1" /> &nbsp; Social Media Marketing & PR</td>
+                <td class="td2"><input type="checkbox" name="name1" /> &nbsp; Team Trainings</td>
+                
+              </tr>
+              <tr class="tr2">
+                <td class="td2"><input type="checkbox" name="name1" /> &nbsp; Website & Application Development</td>
+                <td></td>
+                <td></td>
+              </tr> 
+            </tbody>
+          </table>
+          <p>"{howCan20}"</p>
+          
+          
         <hr style="width: 80%" />
         <div style="margin-left: 60px; margin-right: 60px">
           <p style="letter-spacing: 1px">
             <em>
-              Looking forward to meeting you and hearing all about your business on
-              <strong>(Appointment).</strong><br />FYI you will receive another reminder email with a link to join a
-              virtual Google Meeting.<br />
-              At this free consultation we will learn more about your business and the problems you are facing.<br />
-              During the consultation if we discover that we are a good fit for each other, then we will schedule an
-              assessment where we will collaborate on what solutions and services you might need.</em
-            >
+              <p>Looking forward to meeting you and hearing all about your business on
+                <strong>(Appointment)</strong>.</p>
+              <p>FYI you will receive another reminder email with a link to join a
+              virtual Google Meeting.</p>
+              <br>
+              <p>At this free consultation we will learn more about your business and the problems you are facing.</p>
+              <p>During the consultation if we discover that we are a good fit for each other, then we will</p>
+              <p>assessment where we will collaborate on what solutions and services you might need.</p>
+            
           </p>
         </div>
         <hr style="width: 80%" />
